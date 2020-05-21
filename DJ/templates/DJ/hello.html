@@ -1,0 +1,65 @@
+{% load static %}
+
+<html>
+<head>
+<style>
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 50%;
+}
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+</style>
+</head>
+<body>
+
+<h2>Types of Apples</h2>
+
+<div class="gallery">
+  <a target="_blank" href="Dog.jpg">
+    <img src="{% static 'DJ/images/GalaApple.jfif' %}" alt="Dog Image" width="600" height="600">
+  </a>
+  <div class="desc">GalaApple</div>
+
+</div>
+  <div class="gallery">
+  	<a target="_blank" href="Flower.jfif">
+  		<img src="{% static 'DJ/images/PinkLady.jfif' %}" alt="Flower Image" Width="600" height="600">
+  	</a>
+
+  <div class="desc">Pink Lady Apple</div>
+
+</div>
+
+  <div class="gallery">
+  	<a target="_blank" href="Horses.jpg">
+  		<img src="{% static 'DJ/images/WashingtonApple.jfif' %}" alt="Horses Image" Width="600" height="600">
+  	</a>
+  	<div class="desc">Washington Apple</div>
+
+</div>
+  	<div class="gallery">
+  	<a target="_blank" href="Lion.jpg">
+  		<img src="{% static 'DJ/images/GoldenDelicious.jfif' %}" alt="Lion Image" Width="600" height="600">
+  	</a>
+<div class="desc">Golden Delicious</div>
+
+</div>
+</div>
+
+</body>
+</html>
